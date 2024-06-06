@@ -21,12 +21,16 @@ public class StdRegistration {
         JTextField repasswordT = new JTextField(30);
         JRadioButton gender1 = new JRadioButton("Male");
         JRadioButton gender2 = new JRadioButton("Female");
-        JCheckBox education1 = new JCheckBox("+2");
+        
         JCheckBox education2 = new JCheckBox("Bachelor");
+        JCheckBox education1 = new JCheckBox("+2");
         ButtonGroup lol = new ButtonGroup();
+        
     JPanel p1=new JPanel();
-       lol.add(gender1);
-       lol.add(gender2);
+    lol.add(education2);
+    lol.add(education1);
+    lol.add(gender1);
+    lol.add(gender2);
         p1.add(gender1);
         p1.add(gender2);
        frame.getContentPane().add(p1);
@@ -61,8 +65,8 @@ public class StdRegistration {
         gender1.setBounds(100,220,80,30);
         gender2.setBounds(180,220,80,30);
         education.setBounds(50,270,80,30);
-        education1.setBounds(120,270,80,30);
-        education2.setBounds(180,270,80,30);
+        education1.setBounds(120,270,150,30);
+        education2.setBounds(280,270,150,30);
         submit.setBounds(50,320,90,30);
     
       
